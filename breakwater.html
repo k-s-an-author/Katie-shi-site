@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakwater — Katie Shi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poiret+One&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --cream:#f3eed2;
+      --forest:#123f36;
+      --purple:#584265;
+      --gold:#dfae45;
+      --ink:#173e37;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      background:var(--cream);
+      color:var(--ink);
+      font-family:"Cormorant Garamond",serif;
+    }
+
+    .page{
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      padding:60px 24px;
+    }
+
+    .book-page{
+      width:min(100%,1000px);
+      display:grid;
+      grid-template-columns:360px 1fr;
+      gap:70px;
+      align-items:center;
+    }
+
+    .cover{
+      width:100%;
+      border-radius:18px;
+      display:block;
+      box-shadow:0 18px 45px rgba(0,0,0,.18);
+    }
+
+    .kicker{
+      font-family:"Poiret One",cursive;
+      text-transform:uppercase;
+      letter-spacing:3px;
+      font-size:14px;
+      margin-bottom:14px;
+    }
+
+    h1{
+      font-size:72px;
+      line-height:.9;
+      margin:0 0 24px;
+    }
+
+    .status{
+      color:var(--purple);
+      font-family:"Poiret One",cursive;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      font-size:14px;
+      font-weight:bold;
+      margin-bottom:20px;
+    }
+
+    .description{
+      font-size:24px;
+      line-height:1.45;
+      max-width:520px;
+    }
+
+    .back{
+      display:inline-block;
+      margin-top:25px;
+      color:var(--forest);
+      text-decoration:none;
+      font-family:"Poiret One",cursive;
+      font-size:16px;
+      letter-spacing:1px;
+    }
+
+    .back:hover{
+      text-decoration:underline;
+    }
+
+    @media(max-width:800px){
+      .book-page{
+        grid-template-columns:1fr;
+        gap:35px;
+        max-width:500px;
+      }
+
+      h1{
+        font-size:56px;
+      }
+
+      .cover{
+        max-width:360px;
+        margin:auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <div class="book-page">
+
+      <img class="cover" src="breakwater-cover.png" alt="Breakwater book cover">
+
+      <div>
+        <div class="kicker">A novel by Katie Shi</div>
+        <div class="status">A novel</div>
+
+        <h1>Breakwater</h1>
+
+        <p class="description">
+          A girl, newfound powers, and an unknown past.
+        </p>
+
+        <a class="back" href="index.html">← Back to the bookshelf</a>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
